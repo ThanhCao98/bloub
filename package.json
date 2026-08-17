@@ -5,7 +5,7 @@
   "type": "module",
   "description": "SVG recreation of the x.ai bot avatar. One shape morphing through 14 states, measured off the reference video frame by frame.",
   "license": "MIT",
-  "author": "Jérémy Perret",
+  "author": "J\u00e9r\u00e9my Perret",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeremy-prt/bloub.git"
@@ -19,14 +19,16 @@
   ],
   "packageManager": "pnpm@11.17.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "dev": "node init && vite",
+    "build": "node init && vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "mediabunny": "^1.54.0",
+    "node-fetch": "^3.3.2",
     "vue": "^3.5.41"
   },
   "devDependencies": {
